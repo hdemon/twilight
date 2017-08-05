@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "build": "flow && cat ./src/classes/* ./src/main.js | flow-remove-types > ./public/javascripts/app.js",
     "flow": "flow"
   },
   "dependencies": {
