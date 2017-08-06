@@ -7,8 +7,9 @@ const dead = new Array(10).fill().map(() =>
 const individuals = [...livings, ...dead]
 
 window.onload = () => {
-  const world = new World({ width: 500, height: 500 });
+  const world = new World({ width: 500, height: 500 })
+  world.set(individuals)
 
-  individuals.forEach((individual) => individual.behave());
-  world.render();
+  individuals.forEach((individual) => individual.behave())
+  world.render()
 }

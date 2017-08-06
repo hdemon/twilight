@@ -1,4 +1,7 @@
 interface Individual {
-  id: number,
-  behave: Function
+  id: number;
+  x: number;
+  y: number;
+
+  behave(): Function;
 }
